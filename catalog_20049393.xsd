@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Flat Catalog Design -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="giftgrab">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="mainstore" />
+                <xs:element ref="giftcards" />
+                <xs:element ref="footer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- mainstore reference - child element of giftgrab element -->
+    <xs:element name="mainstore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="logo" />
+                <xs:element ref="mainstorename" />
+                <xs:element ref="address" />
+                <xs:element ref="contact" />
+                <xs:element ref="website" />
+                <xs:element ref="trademark" />
+                <xs:element ref="caret" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- references - child elements of mainstore element  -->
+    <xs:element name="logo">
+        <xs:complexType />
+    </xs:element>
+
+    <xs:element name="mainstorename" type="xs:string" />
+
+    <xs:element name="address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="city" />
+                <xs:element ref="country" />
+                <xs:element ref="street" />
+                <xs:element ref="zipcode" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="city" type="xs:string" />
+    <xs:element name="country" type="xs:string" />
+    <xs:element name="street" type="xs:string" />
+    <xs:element name="zipcode" type="xs:string" />
+
+    <!-- telephone element can occur multiple times -->
+    <xs:element name="contact">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="telephone" maxOccurs="2" />
+                <xs:element ref="email" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="telephone">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute ref="type" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- using restriction and enumeration list -->
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="mobile"></xs:enumeration>
+                <xs:enumeration value="landline"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="email">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- using regex pattern in attribute value-->
+                <xs:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="website" type="xs:anyURI" />
+    <xs:element name="trademark" type="xs:string" />
+    <xs:element name="caret" type="xs:string" />
+
+    <!-- giftcards references - child elements of giftgrab element -->
+    <!-- giftcard element can occur multiple times -->
+    <xs:element name="giftcards">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title" />
+                <xs:element maxOccurs="unbounded" minOccurs="1" ref="giftcard" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- title references - child element of giftcards element -->
+    <xs:element name="title">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="span" />
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="class" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="span" type="xs:string" />
+
+    <!-- giftcard references - child element of giftcards element -->
+    <xs:element name="giftcard">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name" />
+                <xs:element ref="image" />
+                <xs:element ref="brandname" />
+                <!-- ratings element is optional -->
+                <xs:element minOccurs="0" ref="ratings" />
+                <!-- bestseller element is optional -->
+                <xs:element minOccurs="0" ref="bestseller" />
+                <xs:element ref="cost" />
+                <xs:element ref="reedemamount" />
+                <!-- redemption element is optional -->
+                <xs:element minOccurs="0" ref="redemption" />
+                <xs:element ref="quantity" />
+                <!-- validity element is optional -->
+                <xs:element minOccurs="0" ref="validity" />
+                <!-- rank element is optional -->
+                <xs:element minOccurs="0" ref="rank" />
+                <xs:element ref="features" />
+                <xs:element ref="message" />
+            </xs:sequence>
+            <!-- defining ID datatype on g_id attribute  -->
+            <xs:attribute name="g_id" use="required" type="xs:ID" />
+            <xs:attribute name="cardType" use="required" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="name">
+        <xs:complexType mixed="true">
+            <xs:attribute name="ASIN" use="required" type="xs:NMTOKEN" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="image">
+        <xs:complexType>
+            <!-- defining IDREF datatype on i_id attribute  -->
+            <xs:attribute name="i_id" use="required" type="xs:IDREF" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="brandname" type="xs:string" />
+    <xs:element name="ratings" type="xs:string" />
+    <xs:element name="bestseller" type="xs:string" />
+    <xs:element name="cost" type="xs:string" />
+    <xs:element name="reedemamount" type="xs:string" />
+    <xs:element name="redemption" type="xs:string" />
+    <xs:element name="quantity" type="xs:string" />
+    <xs:element name="validity" type="xs:string" />
+    <!-- validto references - child element of validity element  -->
+
+    <xs:element name="rank" type="xs:string" />
+
+    <xs:element name="features">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="feature" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- feature reference - child element of features element  -->
+    <xs:element name="feature" type="xs:string" />
+    <xs:element name="message" type="xs:string" />
+
+    <!-- footer reference - child element of giftgrab element  -->
+    <xs:element name="footer">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="copyright" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- copyright reference - child element of footer element  -->
+    <xs:element name="copyright"></xs:element>
+</xs:schema>

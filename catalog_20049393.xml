@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- CSS linking -->
+<?xml-stylesheet type="text/css" href="catalog_20049393.css"?>
+
+<!-- XML schema linking -->
+<giftgrab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20049393.xsd">
+
+    <!-- Header of the document, contains information about store including a logo -->
+    <mainstore>
+        <logo></logo>
+        <mainstorename>GiftGrab</mainstorename>
+        <address>
+            <city>London</city>
+            <country>United Kingdom</country>
+            <street>Shaftesbury Avenue</street>
+            <zipcode>WC2</zipcode>
+        </address>
+        <contact>
+            Contact Us At:
+            <telephone type="mobile">441234567901</telephone>
+            <telephone type="landline">02476079721</telephone>
+            <email>giftgrab2022@gmail.com</email>
+        </contact>
+        <website>www.gift-grab.com</website>
+        <trademark>Delivering Happiness</trademark>
+        <caret>V</caret>
+    </mainstore>
+
+    <!-- This section contains all the giftcards and their information, acts as body to the document -->
+    <giftcards>
+        <title class="titleText">
+            Available
+            <span>G</span>
+            iftcards
+        </title>
+
+        <!-- Contains information about each giftcard individually inside giftcard -->
+        <giftcard g_id="G01" cardType="digital">
+            <name ASIN="B078J21W75">Netflix Gift Card</name>
+            <image i_id="G01" />
+            <brandname>By: Netflix</brandname>
+            <ratings>Ratings: 10,887 customer ratings</ratings>
+            <bestseller>Bestseller</bestseller>
+            <cost>Cost: $30</cost>
+            <reedemamount>Reedem Amount: $20</reedemamount>
+            <quantity>
+                Quantity Available: 4
+            </quantity>
+            <validity>
+                Valid Until: September 16, 2022
+            </validity>
+            <rank>Rank: #54 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>No credit card required</feature>
+                <feature>Cancel anytime</feature>
+                <feature>No returns and no refunds</feature>
+            </features>
+            <message>Your TV shows &#38; movies. Your Way</message>
+        </giftcard>
+
+
+        <giftcard g_id="G02" cardType="digital">
+            <name ASIN="B08F3C99KN">Apple Gift Card</name>
+            <image i_id="G02" />
+            <brandname>By: Apple</brandname>
+            <ratings>Ratings: 38,969 customer ratings</ratings>
+            <bestseller>Bestseller</bestseller>
+            <cost>Cost: $200</cost>
+            <reedemamount>Reedem Amount: $150</reedemamount>
+            <quantity>
+                Quantity Available: 2
+            </quantity>
+            <validity>
+                Valid Until: November 1, 2022
+            </validity>
+            <rank>Rank: #6 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>For all things Apple - iPad, Airpods, Apple Watch, iPhone, MacBook, iCloud, accessories, and more.</feature>
+                <feature>Perfect for App Store purchases and subscription-get apps, games, music, movies, TV shows, and more</feature>
+                <feature>The perfect gift to say happy, birthday, thank you, congratulations, and more</feature>
+                <feature>To make purchases at an Apple Store location, take the gift card to the Apple Store before redeeming it.</feature>
+                <feature>No returns or refunds on Apple Gift Cards. Terms Apply.</feature>
+            </features>
+            <message>App Store, iTunes, iPhone, iPad, Airpods, MacBook, accessories and more.</message>
+        </giftcard>
+
+        <giftcard g_id="G03" cardType="digital">
+            <name ASIN="B079YMX2J6">Uber Gift Card</name>
+            <image i_id="G03" />
+            <brandname>By: Uber</brandname>
+            <ratings>Ratings: 17,798 customer ratings</ratings>
+            <bestseller>Bestseller</bestseller>
+            <cost>Cost: $100</cost>
+            <reedemamount>Reedem Amount: $85</reedemamount>
+            <quantity>
+                Quantity Available: 5
+            </quantity>
+            <validity>
+                Valid Until: December 25, 2022
+            </validity>
+            <rank>Rank: #41 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>This card is redeemable via the Uber app within the U.K in cities where Uber is available.</feature>
+                <feature>Redemption: Mobile App</feature>
+                <feature>No returns and refunds on gift cards</feature>
+            </features>
+            <message>Move the way you want.</message>
+        </giftcard>
+
+
+        <giftcard g_id="G04" cardType="physical" xmlns:sb="https://www.w3schools.com/starbucks">
+            <name ASIN="B07ZSB9QYL">Starbucks Gift Card</name>
+            <image i_id="G04" />
+            <brandname>By: Starbucks</brandname>
+            <ratings>Ratings: 18,430 customer ratings</ratings>
+            <bestseller>Bestseller</bestseller>
+            <cost>Cost: $50</cost>
+            <reedemamount>Reedem Amount: $45</reedemamount>
+            <redemption>Redemption: Instore</redemption>
+            <quantity>
+                Quantity Available: 15
+            </quantity>
+            <validity>
+                Valid Until: January 1, 2023
+            </validity>
+            <rank>Rank: #51 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>Redemption: Instore</feature>
+                <feature>No returns and refunds on gift cards</feature>
+            </features>
+            <message>Brewed for those who love coffee.</message>
+        </giftcard>
+
+        <giftcard g_id="G05" cardType="digital">
+            <name ASIN="B08MW92TWD">Lyft Gift Card</name>
+            <image i_id="G05" />
+            <brandname>By: Lyft</brandname>
+            <ratings>Ratings: 3,157 customer ratings</ratings>
+            <cost>Cost: $90</cost>
+            <reedemamount>Reedem Amount: $75</reedemamount>
+            <quantity>
+                Quantity Available: 10
+            </quantity>
+            <validity>
+                Valid Until: August 15, 2022
+            </validity>
+            <rank>Rank: #70 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>The perfect gift for holidays, birthdays, anniversaries, friends, family, coworkers, acquaintences, people you sort of like and want to be nice to.</feature>
+                <feature>Use it for standard rides, shared rides, fancy cars(!!), bikes, and scooters</feature>
+                <feature>We are committed to the community`s well-being and have instituted health and safety guidelines for riders and drivers based on CDC guidance.</feature>
+                <feature>Please note: There are no returns or refunds for gift cards.</feature>
+            </features>
+            <message>Rideshare, bikes, scooters, shared rides, Lyft XL, Lyft Lux, Lux Black, Lux Black XL.</message>
+        </giftcard>
+
+        <giftcard g_id="G06" cardType="digital">
+            <name ASIN="B08MW92TWD">Spotify Premium 12 Month Subscription Gift Card</name>
+            <image i_id="G06" />
+            <brandname>By: Spotify</brandname>
+            <cost>Cost: $40</cost>
+            <reedemamount>Reedem Amount: $30</reedemamount>
+            <quantity>
+                Quantity Available: 7
+            </quantity>
+            <validity>
+                Valid Until: April 15, 2023
+            </validity>
+            <rank>Rank: #147 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>Millions of songs and thousands of podcasts. Play on-demand and offline, anywhere.</feature>
+                <feature>All your music is ad-free, uninterrupted and in high quality audio.</feature>
+                <feature>No returns and no refunds on gift cards.</feature>
+            </features>
+            <message>Music for every mood. Unlimited music without ads and interference. Hope you enjoy this gift card!</message>
+        </giftcard>
+
+        <giftcard g_id="G07" cardType="physical">
+            <name ASIN="B074T91QTZ">Dominos Pizza Gift Card</name>
+            <image i_id="G07" />
+            <brandname>By: Dominos</brandname>
+            <ratings>Ratings: 5,167 customer ratings</ratings>
+            <cost>Cost: $40</cost>
+            <reedemamount>Reedem Amount: $35</reedemamount>
+            <redemption>Redemption: Instore</redemption>
+            <quantity>
+                Quantity Available: 3
+            </quantity>
+            <validity>
+                Valid Until: May 30, 2022
+            </validity>
+            <rank>Rank: #163 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>Print certificate or provide your 19 digit gift card number and 4 digit pin over the phone, online, or in-store.</feature>
+                <feature>Card may only be used for purchases at participating Domino's Pizza stores in the UK.</feature>
+                <feature>No returns and no refunds on gift cards.</feature>
+            </features>
+            <message>Dil, Dosti, Domino's!</message>
+        </giftcard>
+
+        <giftcard g_id="G08" cardType="digital">
+            <name ASIN="B08MW92TWD">Google Play gift code - give the gift of games, apps and more - US Only</name>
+            <image i_id="G08" />
+            <brandname>By: Google</brandname>
+            <ratings>Ratings: 33,314 customer ratings</ratings>
+            <bestseller>Bestseller</bestseller>
+            <cost>Cost: $40</cost>
+            <reedemamount>Reedem Amount: $35</reedemamount>
+            <quantity>
+                Quantity Available: 7
+            </quantity>
+            <validity>
+                Valid Until: April 15, 2022
+            </validity>
+            <rank>Rank: #10 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>No returns and no refunds on gift cards. Good for use on the UK Google Play Store only. Terms apply - see below.</feature>
+                <feature>Google Play Games: Choose from thousands of great games: puzzles, sports, strategy, action and more.</feature>
+                <feature>Google Play Apps: Whether you are into photography, picking stocks or just keeping up with your friends, there is an app for you.</feature>
+                <feature>Google Play Movies &#38; TV: Buy or rent the newest movies and shows way before they hit DVD.</feature>
+                <feature>Google Play Books: Buy just the books you want, when you want them. There is no commitment required.</feature>
+            </features>
+            <message>Don't be evil.</message>
+        </giftcard>
+
+        <giftcard g_id="G09" cardType="physical">
+            <name ASIN="B093Z1F4QM">Airbnb Gift Card</name>
+            <image i_id="G09" />
+            <brandname>By: Airbnb</brandname>
+            <cost>Cost: $100</cost>
+            <reedemamount>Reedem Amount: $98</reedemamount>
+            <redemption>Redemption: Instore</redemption>
+            <quantity>
+                Quantity Available: 6
+            </quantity>
+            <validity>
+                Valid Until: May 26, 2022
+            </validity>
+            <features>
+                Features
+                <feature>Redemption: Online</feature>
+                <feature>No returns and refunds on gift cards.</feature>
+            </features>
+            <message>Travel like Human.</message>
+        </giftcard>
+
+        <giftcard g_id="G10" cardType="digital">
+            <name ASIN="B0893JQ2X2">Twitch Gift Card - UK</name>
+            <image i_id="G10" />
+            <brandname>By: Twitch</brandname>
+            <ratings>Ratings: 1,459 customer ratings</ratings>
+            <cost>Cost: $200</cost>
+            <reedemamount>Reedem Amount: $150</reedemamount>
+            <quantity>
+                Quantity Available: 2
+            </quantity>
+            <validity>
+                Valid Until: June 15, 2023
+            </validity>
+            <rank>Rank: #118 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>Redemption: Online</feature>
+                <feature>No returns and refunds on gift cards.</feature>
+            </features>
+            <message>Come be their hero.</message>
+        </giftcard>
+
+        <giftcard g_id="G11" cardType="digital">
+            <name ASIN="B08NTQWTWN">Hulu Gift Card</name>
+            <image i_id="G11" />
+            <brandname>By: Hulu</brandname>
+            <cost>Cost: $25</cost>
+            <reedemamount>Reedem Amount: $15</reedemamount>
+            <quantity>
+                Quantity Available: 30
+            </quantity>
+            <validity>
+                Valid Until: July 15, 2022
+            </validity>
+            <rank>Rank: #150 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>A Hulu subscription offers unlimited streaming of today’s hottest shows with next-day air. Watch This is Us, Empire, The Voice, plus get exclusive past seasons of Seinfeld, South Park, The Golden Girls, and more. Stream originals like the Emmy Award-winning The Handmaid’s Tale, get new movies all the time, and plenty of stuff for the kids—including every season of Curious George. Activate on your favorite supported devices to watch wherever you are. Limited Commercials and No Commercials plans available.</feature>
+                <feature>No returns and refunds on gift cards.</feature>
+            </features>
+            <message>Never miss a moment. Come TV With Us.</message>
+        </giftcard>
+
+        <giftcard g_id="G12" cardType="physical">
+            <name ASIN="B077MX91YD">Whole Food Markets Gift Card</name>
+            <image i_id="G12" />
+            <brandname>By: Whole Food Markets</brandname>
+            <ratings>Ratings: 5,195 customer ratings</ratings>
+            <cost>Cost: $25</cost>
+            <reedemamount>Reedem Amount: $15</reedemamount>
+            <redemption>Redemption: Instore</redemption>
+            <quantity>
+                Quantity Available: 20
+            </quantity>
+            <validity>
+                Valid Until: December 15, 2022
+            </validity>
+            <rank>Rank: #75 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>Whole Foods Market gift cards cannot be used for online purchases including catering and meals on wholefoodsmarket.com or grocery delivery through Amazon.com and other third-party partners.</feature>
+                <feature>The card may be used at all Whole Foods Market stores in the United States and Canada.</feature>
+                <feature>Redemption: Instore</feature>
+                <feature>No returns and refunds on this gift card.</feature>
+            </features>
+            <message>For my favorite foodie.</message>
+        </giftcard>
+
+        <giftcard g_id="G13" cardType="digital">
+            <name ASIN="B07ZDX292M">DoorDash Gift Card</name>
+            <image i_id="G13" />
+            <brandname>By: DoorDash</brandname>
+            <ratings>Ratings: 13,596 customer ratings</ratings>
+            <bestseller>Bestseller</bestseller>
+            <cost>Cost: $500</cost>
+            <reedemamount>Reedem Amount: $425</reedemamount>
+            <quantity>
+                Quantity Available: 1
+            </quantity>
+            <validity>
+                Valid Until: July 13, 2022
+            </validity>
+            <rank>Rank: #24 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>A huge selection of cuisines and restuarants.</feature>
+                <feature>Easy ordering and real time tracking</feature>
+                <feature>Customize your orders</feature>
+                <feature>Pickup and group order options</feature>
+                <feature>To redeem, log in or create an account, select "Credits and Gift Cards" and enter the gift card number in to add the balance to your account</feature>
+                <feature>No returns and refunds on this gift card.</feature>
+            </features>
+            <message>Restuarants and more, delivered to your door.</message>
+        </giftcard>
+
+        <giftcard g_id="G14" cardType="digital">
+            <name ASIN="B08QTNVVT6">Instacart Gift Card</name>
+            <image i_id="G14" />
+            <brandname>By: Instacart</brandname>
+            <cost>Cost: $150</cost>
+            <reedemamount>Reedem Amount: $115</reedemamount>
+            <quantity>
+                Quantity Available: 3
+            </quantity>
+            <validity>
+                Valid Until: January 15, 2023
+            </validity>
+            <rank>Rank: #134 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>The Instacart app gives you the power to get groceries, household items, and more delivered the same-day.</feature>
+                <feature>Redeem in the app: Sign up for Instacart or log into your existing account Enter the main menu Tap Credits, promos &#38; gift cards Enter the code Redeem on the website: Sign up for Instacart or log into your existing account Click Account or your name Click Add promo or gift card Enter the code.</feature>
+                <feature>No returns and refunds on this gift card.</feature>
+            </features>
+            <message>Groceries delivered in an hour</message>
+        </giftcard>
+
+        <giftcard g_id="G15" cardType="physical">
+            <name ASIN="B00MV9FCFQ">Gamestop Gift Card</name>
+            <image i_id="G15" />
+            <brandname>By: Gamestop</brandname>
+            <ratings>Ratings: 6,836 customer ratings</ratings>
+            <cost>Cost: $100</cost>
+            <reedemamount>Reedem Amount: $90</reedemamount>
+            <redemption>Redemption: Instore</redemption>
+            <quantity>
+                Quantity Available: 3
+            </quantity>
+            <rank>Rank: #72 in Gift Cards</rank>
+            <features>
+                Features
+                <feature>Redeemable at UK    GameStop, EB Games, Babbage's, Electronic Boutique, EBX, Planet X, and Software Etc. stores.</feature>
+                <feature>Over 6,100 stores located throughout the United Kingdom.</feature>
+                <feature>No returns and refunds on this gift card.</feature>
+            </features>
+            <message>Power to the players.</message>
+        </giftcard>
+    </giftcards>
+
+    <footer>
+        <![CDATA[
+         Note:                                                                                   
+         Due to popular demand from our consumers in the United Kingdom. We've chosen to expand into Manchester as well. Manchester locations will open by January 2023. For additional information, follow us on social media at @GiftGrab. Continue to love and support us.
+         ]]>
+        <copyright>Copyright &#169; 2022 GiftGrab Store. ALL RIGHTS RESERVED</copyright>
+    </footer>
+</giftgrab>
